@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sepft
+  name: dhnmrt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sepft
+      app: dhnmrt
   template:
     metadata:
       labels:
-        app: sepft
+        app: dhnmrt
     spec:
       containers:
-      - image: okteto.dev/sepft:latest
-        name: sepft
+      - image: okteto.dev/dhnmrt:latest
+        name: dhnmrt
         ports:
         - containerPort: 8080
         env:
